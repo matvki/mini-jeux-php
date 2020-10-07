@@ -257,7 +257,8 @@ if (($name != "") && ($name2 != "") && ($classe != "") && ($classe2 != "") && ($
     //choix de qui commence a tapper
     if ($stat['hp'] > $stat2['hp']) {
         //le perso 2 commence a tapper
-        echo "Première manche " . $stat2['name'] . " commence à tapper ⚔︎⚔︎⚔︎<br>  " . $stat['name'] . " prépare ton bouclier 🛡🛡🛡";
+        echo "<div style='display : flex;' ><h1>Première manche </h1><h1 style='color : orange; margin : auto 5px'>" . $stat2['name'] . "</h1><h1> commence à tapper ⚔︎⚔︎⚔︎<br></h1></div>";
+        echo "<div style='display : flex;' ><h1 style='color : orange; margin : auto 5px'>" . $stat['name'] . "</h1><h1> prépare ton bouclier 🛡🛡🛡</h1></div><br>";
         //boucle de combat
         while (($stat['hp'] > 0) && ($stat2['hp']) > 0) {
             fight1($stat, $stat2);
@@ -266,7 +267,7 @@ if (($name != "") && ($name2 != "") && ($classe != "") && ($classe2 != "") && ($
         }
     }else{
         // le perso 1 commence a taper
-        echo "Première manche " . $stat['name'] . " commence à tapper ⚔︎⚔︎⚔︎<br>  " . $stat2['name'] . " prépare ton bouclier 🛡🛡🛡";
+        echo "<h1>Première manche " . $stat['name'] . " commence à tapper ⚔︎⚔︎⚔︎<br>  " . $stat2['name'] . " prépare ton bouclier 🛡🛡🛡</h1><br>";
         //boucle de combat
         while (($stat['hp'] > 0) && ($stat2['hp'] > 0)) {
             fight2($stat, $stat2);

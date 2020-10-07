@@ -18,7 +18,7 @@
         session_destroy();
     }
     ?>
-    <h1>Choisissez votre personnage</h1>
+    <h1 style="color: blue;" >Choisissez votre personnage</h1>
     <form action="./jeux.php" method="post">
     <div>
         <label for="name">Entrez votre pseudo</label>
